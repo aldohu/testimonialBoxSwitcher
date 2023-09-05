@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	quotes: '\201C''\201D';
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'The Nautigal', cursive;
+}
+.main {
+	background-color: rgb(31, 69, 242);
+	color: aliceblue;
+	font-size: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.about {
+	flex-wrap: wrap;
+
+	padding: 20px;
+	display: flex;
+	text-align: center;
+}
+.about:before {
+	content: open-quote;
+	font-size: 50px;
+}
+
+.about:after {
+	content: close-quote;
+	font-size: 50px;
+}
+.info {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.image {
+	border-radius: 50%;
+}
+img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	padding-right: 20px;
+}
+.loading {
+	width: 90%;
+	height: 10px;
+	background-color: red;
+	margin: 10px;
+}
+.loading {
+	width: 0;
+	height: 10px;
+	background-color: red;
+	margin: 10px;
+	animation: loadingAnimation 10s linear infinite;
+}
+
+@keyframes loadingAnimation {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
