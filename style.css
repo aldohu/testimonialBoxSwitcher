@@ -23,6 +23,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 500px;
 }
 .about {
 	flex-wrap: wrap;
